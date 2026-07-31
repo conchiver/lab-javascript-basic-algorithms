@@ -20,6 +20,14 @@ Al finalizar este ejercicio, serás capaz de:
 
 <br>
 
+## Ejecutar cada ejercicio
+1. Abrimos un terminal
+2. Ejecutamos (ex1.js es el nombre del fichero)
+
+```bash
+node ex1.js 
+```
+
 ### ex1.js: Nombres y entrada de datos
 
 1.1 Crea una variable `hacker1` con el nombre del driver. <br>
