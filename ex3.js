@@ -1,3 +1,3 @@
 // Ejercicio 3: Bucles
-const driver = "Pedro";
-const navigator = "Maria Luisa";
+const hacker1 = "Pedro";
+const hacker2 = "Maria Luisa";

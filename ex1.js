@@ -1,3 +1,3 @@
 // Ejercicio 1: Nombres y entrada
-const driver = "Pedro";
-const navigator = "Maria Luisa";
+const hacker1 = "Pedro";
+const hacker2 = "Maria Luisa";
