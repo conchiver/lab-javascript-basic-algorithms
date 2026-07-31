@@ -20,41 +20,87 @@ Al finalizar este ejercicio, serás capaz de:
 
 <br>
 
-### Iteración 1: Nombres y entrada de datos
+### ex1.js: Nombres y entrada de datos
 
 1.1 Crea una variable `hacker1` con el nombre del driver. <br>
-1.2 Imprime `"The driver's name is XXXX"`.<br>
+1.2 Muestra por consola el nombre del driver, por ejemplo: `El nombre del driver es John`.<br>
 1.3 Crea una variable `hacker2` con el nombre del navigator.<br>
-1.4 Imprime `"The navigator's name is YYYY"`.
+1.4 Muestra por consola el nombre del navigator, por ejemplo: `El nombre del navigator es Jane`.
 
-### Iteración 2: Condicionales
+Salida esperada (ejemplo):
+```bash
+El nombre del driver es John
+El nombre del navigator es Jane
+```
 
-2.1. Dependiendo de qué nombre [sea más largo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), imprime: <br>
-- `The driver has the longest name, it has XX characters.` o <br>
-- `It seems that the navigator has the longest name, it has XX characters.` o <br>
-- `Wow, you both have equally long names, XX characters!`.
+### ex2-js: Condicionales
 
-### Iteración 3: Bucles
+2.1. Dependiendo de qué nombre [sea más largo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), muestra por consola uno de los siguientes mensajes en español: <br>
+- `El driver tiene el nombre más largo, tiene XX caracteres.` o <br>
+- `Parece que el navigator tiene el nombre más largo, tiene XX caracteres.` o <br>
+- `¡Vaya, ambos tienen nombres de la misma longitud, XX caracteres!`.
+
+Salidas esperadas (ejemplos):
+
+- Caso driver más largo (ejemplo: `driver = Alexander`, `navigator = Bob`):
+```bash
+El driver tiene el nombre más largo, tiene 9 caracteres.
+```
+
+- Caso navigator más largo (ejemplo: `driver = Amy`, `navigator = Elizabeth`):
+```bash
+Parece que el navigator tiene el nombre más largo, tiene 9 caracteres.
+```
+
+- Caso igual longitud (ejemplo: `driver = Anna`, `navigator = Mark` — ambos 4):
+```bash
+¡Vaya, ambos tienen nombres de la misma longitud, 4 caracteres!
+```
+
+### ex3.js: Bucles
 
 3.1 Imprime los caracteres del nombre del driver separados por espacios y [en mayúsculas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), por ejemplo: `"J O H N"`.
 
 3.2 Imprime todos los caracteres del nombre del navigator en orden inverso, por ejemplo: `"nhoJ"`.
 
-3.3 Dependiendo del [orden lexicográfico](https://en.wikipedia.org/wiki/Lexicographical_order) de los strings, imprime: <br>
+3.3 Dependiendo del [orden lexicográfico](https://en.wikipedia.org/wiki/Lexicographical_order) de los strings, muestra por consola uno de los siguientes mensajes en español: <br>
 
-* `The driver's name goes first.` <br>
-* `Yo, the navigator goes first, definitely.` <br>
-* `What?! You both have the same name?`
+- `El nombre del driver va primero.` <br>
+- `Oye, el nombre del navigator va primero, definitivamente.` <br>
+- `¿Qué? ¿Ambos tienen el mismo nombre?`
+
+Salidas esperadas (ejemplos):
+
+- Para `driver = John`:
+```bash
+J O H N
+```
+
+- Para `navigator = Jane` (inverso):
+```bash
+enaJ
+```
+
+- Comparación lexicográfica (ejemplo: `driver = Alice`, `navigator = Bob`):
+```bash
+El nombre del driver va primero.
+```
 
 ### ¡Es hora de los Bonus!
 
-#### Bonus 1:
+#### exbonus-1.js:
 
 * Genera 3 párrafos. Guarda el texto en una nueva variable de tipo string llamada `longText`.
 * Haz que tu programa cuente el número de palabras del string.
 * Haz que tu programa cuente cuántas veces aparece la palabra latina [`et`](https://en.wiktionary.org/wiki/et#Latin).
+ 
+ Salida esperada (ejemplo):
+ ```bash
+ Número total de palabras en longText: 42
+ La palabra "et" aparece 3 veces
+ ```
 
-#### Bonus 2:
+#### exbonus-2.js:
 
 Crea una nueva variable, `phraseToCheck`, que contenga cualquier valor de tipo string. Escribe un código que compruebe si el valor asignado a esta variable es un [palíndromo](https://en.wikipedia.org/wiki/Palindrome). Estos son algunos ejemplos de palíndromos:
 
@@ -67,6 +113,14 @@ Crea una nueva variable, `phraseToCheck`, que contenga cualquier valor de tipo s
 * `"put it up"`
 * `"Was it a car or a cat I saw?"` y `"No 'x' in Nixon"`.
 
+ Salida esperada (ejemplo):
+ ```bash
+ phraseToCheck = "A man, a plan, a canal, Panama!"
+ Resultado: Es un palíndromo.
+ 
+ phraseToCheck = "Hello world"
+ Resultado: No es un palíndromo.
+ ```
 
 **¡Feliz programación!** :heart:
 
